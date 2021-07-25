@@ -1,0 +1,93 @@
+@use '../custom' as *;
+
+.about {
+  .col_rev {
+    @include media-breakpoint-down(md) {
+      display:flex;
+      flex-direction: column-reverse !important;
+    }
+  }
+  .col-left {
+    padding: 2rem !important;
+    .about-info {
+      padding: 6rem 4rem 6rem 4rem !important;
+
+      h3 {
+        font-family: "Fraunces", sans-serif !important;
+        font-weight: 700 !important;
+        margin-bottom: 1.725rem !important;
+        
+      }
+      p {
+        font-size: 1rem !important;
+        font-family: "Barlow", sans-serif !important;
+        font-weight: 500;
+        color: $Grayish-blue;
+        margin-bottom: 3rem !important;
+      }
+
+      .info-learn {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding: 0 1rem 0 3rem;
+        z-index: 0;
+        width: 110px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          border-radius: 40px;
+          background-color: $Yellow;
+          height: 0.7rem;
+          z-index: -1;
+          bottom: -1px;
+          left: 0;
+          opacity: 0;
+          @include Transition;
+        }
+
+        a {
+          text-align: center !important;
+          font-size: 1rem;
+          text-decoration: none;
+          color: $black;
+          font-weight: 900;
+        }
+
+        &:hover {
+          &::before {
+            opacity: 1 !important;
+          }
+        }
+      }
+
+      .second::before {
+        background-color: $Soft-red;
+      }
+
+      @include media-breakpoint-down(md) {
+          padding:4rem 2rem 4rem 2rem !important;
+          h3{
+            text-align:center;
+            font-size: 2rem;
+          }
+          P{
+            text-align:center;
+          }
+          .info-learn{
+            position:relative;
+            left:34%;
+            display:flex !important;
+            justify-content:center !important;
+          }
+        }
+    }
+  }
+
+  img {
+    object-fit: cover;
+    background-position: center;
+  }
+}

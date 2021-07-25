@@ -1,0 +1,43 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+// Primary
+
+$Soft-red: hsl(7, 99%, 70%);
+$Yellow: hsl(51, 100%, 49%);
+$Dark-desaturated-cyan: hsl(167, 40%, 24%);
+$Dark-blue: hsl(198, 62%, 26%);
+$Dark-moderate-cyan: hsl(168, 34%, 41%);
+
+// Neutral
+
+$Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$Very-dark-grayish-blue: hsl(213, 9%, 39%);
+$Dark-grayish-blue: hsl(232, 10%, 55%);
+$Grayish-blue: hsl(210, 4%, 67%);
+$White: hsl(0, 0%, 100%);
+
+@mixin Transition {
+  transition: 0.4s ease;
+}
+
+@mixin PolyMorphism {
+  background: rgba(255, 255, 255, 0.25) !important;
+  backdrop-filter: blur(9.5px) !important;
+  -webkit-backdrop-filter: blur(9.5px) !important;
+  border: none !important;
+}
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

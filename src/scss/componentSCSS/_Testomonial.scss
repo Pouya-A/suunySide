@@ -1,0 +1,64 @@
+@use '../custom' as *;
+* {
+  font-family: "Barlow", sans-serif !important;
+}
+.testomonial {
+  padding: 8rem !important;
+
+  &-header {
+    margin-bottom: 5rem !important;
+    letter-spacing: 4px;
+    h2 {
+      font-family: "Fraunces", sans-serif !important;
+      color: $Grayish-blue;
+    }
+  }
+  &-info {
+    &-img {
+      margin-bottom: 3rem !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+      }
+    }
+
+    &-content {
+      padding: 0 1rem 0 1rem !important;
+      p {
+        font-size: 0.8rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        color: $Very-dark-grayish-blue;
+        margin-bottom: 3rem !important;
+      }
+      h3 {
+        font-family: "Fraunces", sans-serif !important;
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin-bottom: 0.725rem !important;
+      }
+      h4 {
+        font-size: 0.6rem;
+        color: $Very-dark-grayish-blue;
+        font-weight: 500;
+      }
+    }
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 6.5rem !important;
+
+      &-content {
+        padding: 0 !important;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding-right: 6rem !important;
+    padding-left: 6rem !important;
+  }
+}

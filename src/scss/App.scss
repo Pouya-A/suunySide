@@ -1,0 +1,10 @@
+@use 'custom' as *;
+
+@use './componentSCSS/navbar.scss';
+@use './componentSCSS/hero';
+@use './reset';
+@use './componentSCSS/About';
+@use './componentSCSS/Services';
+@use './componentSCSS/Testomonial';
+@use './componentSCSS/Product';
+@use './componentSCSS/Footer';
